@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* 최소 768이상 ~ 1024 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+
+  /* 상단해더 서식 */
+  .header_inner{
+    width:100%;
+  }
+
+  .total_btn{
+    position:absolute;
+    right:10px;
+    bottom:0px;
+    z-index:100;
+    display:inline;
+  }
+  .total_btn > i.fas{
+    padding:6px; 
+    font-size:2rem; /* 1rem = 16px */ 
+  }
+  /* 전체메뉴 클릭시 체크박스가 체크되면서 체크박스의 바로위 헤더의 자손 .gnb의 높이를 변경하여 서브가 보이게 한다. */
+  #toggle:checked + header > .gnb{
+    height:260px;background-color:#005fb89b;
+  }
+  #toggle:checked + header > .gnb a{color:#fff;}
+  .gnb > ul{
+    width:100%;
+  }
+  .gnb > ul > li:last-child{padding-right:50px;}
+  .gnb > ul > li{
+    margin:0px 1.3%;
+  }
+  .gnb > ul > li > a{font-size:1rem;}
+
+  /* 메인콘텐츠 서식 */
+  .slide{}
+  .cont{
+    width:100%;
+    display:grid;
+    box-sizing:border-box;
+    grid-template-columns:auto;
+    grid-template-areas:
+      "c_b_story"
+      "n_item"
+      "ad"
+      "model" 
+      "cf"
+  }
+  .cont img{width:100%;}
+
+  .n_item{
+    grid-area:n_item;
+  }
+  .n_item img{max-width:100%;}
+  .item{
+    right:99px;top:262px;
+    font-size:14px;
+  }
+  .c_b_story{
+    grid-area:c_b_story;
+  }
+  .ad{
+    grid-area:ad;
+  }
+  .ad img{max-width:100%;}
+  .ad p{transform: translateY(-305px);}
+  .model{
+   grid-area:model; 
+  }
+
+  .model ul{width:100%;}
+  .model > ul >li img{
+    width:140px;
+  }
+  .cf{
+    grid-area:cf;
+  }
+  .cf > .cf1{
+    width:600px;
+  }
+  .cf1{
+    top:210px;
+  }
+  .cf iframe{
+    width:400px;height:247px;
+    margin: -55px 100px;
+  }
+  /* 푸터영역 서식 */
+  footer{
+   width:100%;
+  }
+  .f_lnb >ul{
+    padding:0px 2.7% 20px 2.7%;
+  }
+  footer > .f_lnb{
+    width: 90%;
+    margin: 0px auto;
+  }
+}

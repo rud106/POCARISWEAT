@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>포카리스웨트 레이아웃</title>
+    <!-- https://icoconvert.com/ 일러나 포토샵에서 만들어서 가서업로드 수정후 사용 -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/untitled_1_kGh_icon.ico">
+
+    <!-- 초기화 서식 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 공통서식 -->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!-- 레이아웃 서식 -->
+    <link href="./css/pc.css" rel="stylesheet" type="text/css">
+    <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+    <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+    <!-- 매인페이지 서식 -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!-- 플렉스 슬라이더 서식 -->
+    <link href="./css/flexslider.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- 플렉스 슬라이더 제이쿼리 서식 -->
+    <script src="./script/jquery.flexslider.js"></script>
+
+    <!-- 벤더프리픽스 - css3속성사용시 접두사 자동으로 붙여주는 스크립트 소스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <script src="./script/main.js"></script>
+    <!-- 아이콘폰트 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- 피비콘 서식 -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/untitled_1_d5m_icon.ico">
+    </head>
+    <body>
+      <!-- 체크박스 -->
+      <input type="checkbox" id="toggle">
+
+      <!-- 상단해더 -->
+      <header>
+        <div class="header_inner">
+          <h1>
+            <a href="index.html" title="메인페이지 바로가기">
+              <img src="./img/m_logo.png" alt="상단로고">
+            </a>
+          </h1>
+
+          <!-- lnb : local navgation bar -->
+          <nav class="lnb">
+            <ul>
+              <li><a href="home.html" title="홈으로">home</a></li>
+              <li><a href="shop.html" title="제품">shop</a></li>
+              <li><a href="event.html" title="이벤트">event</a></li>
+              <li><a href="join.html" title="회원가입">join</a></li>
+              <li><a href="login.html" title="로그인">login</a></li>
+              <li><a href="ad.html" title="관리자">admin</a></li>
+              <li>
+                <input type="text" id="search">
+                <label for="search">
+                  <i class="fas fa-search"></i>
+                </label>
+            </ul>
+          </nav>
+        
+      <!-- 전체메뉴 버튼 (토글)(태블릿과 모바일에서만 나옴)-->
+            <label for="toggle" class="total_btn">
+             <i class="fas fa-bars"></i>
+            </label>
+      <!-- 모바일용 검색버튼 -->
+            <i class="fas fa-search m_search"></i>
+        </div>
+
+      <!-- 메인메뉴 : gnb -->
+      <nav class="gnb">
+        <h3>menu</h3>
+        <label for="toggle"><i class="fas fa-times"></i></label>
+        <ul>
+          <li><a href="brand.html" title="브랜드 소개">PRODUCT
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="sub">
+            <li><a href="brand.html" title="브랜드 스토리">포카리스웨트</a></li>
+            <li><a href="a.html" title="커피 스토리">이온워터</a></li>
+            <li><a href="a.html" title="커피 스토리">연혁</a></li>
+            <li><a href="a.html" title="커피 스토리">BI</a></li>
+            <li><a href="a.html" title="커피 스토리">패키지</a></li>
+          </ul>
+         </li>
+
+          <li><a href="manu.html" title="메뉴소개">MEDIA
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="sub">
+            <li><a href="menu.html" title="베이커리">모델TVCF</a></li>
+            <li><a href="b.html" title="음료">캠페인&프로모션</a></li>
+            <li><a href="b.html" title="디저트">언론자료</a></li>
+          </ul>
+        </li>
+
+          <li><a href="store.html" title="매장안내">GLOBAL
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="sub">
+            <li><a href="store.html" title="매장차기">글로벌 네트워크</a></li>
+          </ul>
+        </li>
+
+          <li><a href="community.html" title="커뮤니티">COMMUNITY
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="sub">
+            <li><a href="community.html" title="">SOCIAL</a></li>
+            <li><a href="c.html" title="자주묻는 질문">갤러리스토리</a></li>
+            <li><a href="c.html" title="상담톡">헬스라이프</a></li>
+            <li><a href="c.html" title="이벤트">이벤트</a></li>
+          </ul>
+        </li>
+
+          <li><a href="fran.html" title="프렌차이즈">SNS
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="sub">
+            <li><a href="fran.html" title="단체 및 기업">페이스북</a></li>
+            <li><a href="e.html" title="신규입점 제외">인스타그램</a></li>
+            <li><a href="e.html" title="신규입점 제외">카카오톡</a></li>
+            <li><a href="e.html" title="신규입점 제외">트위터</a></li>
+          </ul>
+        </li>
+        </ul>
+      </nav>
+     </header> 
+
+
+      <!-- 메인 -->
+      <main>
+      <section class="slide">
+        <h2>메인슬라이드</h2>
+<!-- Pc tablet 슬라이드 서식 -->
+        <div class="flexslider pc_slide">
+          <ul class="slides">
+            <li>
+              <a href="sldie.html" title="슬라이드01"><img src="./img/s1.jpg" alt="사진"/></a>
+            </li>
+            <li>
+              <a href="sldie.html" title="슬라이드02"><img src="./img/s2.jpg" alt="사진"/></a>
+            </li>
+            <li>
+              <a href="sldie.html" title="슬라이드03"><img src="./img/s3.jpg" alt="사진"/></a>
+            </li>
+          </ul>
+        </div>
+
+      <!-- 모바일에서만 나타는 슬라이드 -->
+        <div class="flexslider m_slide">
+          <ul class="slides">
+            <li>
+              <a href="sldie.html" title="슬라이드01"><img src="./img/ad.jpg" alt="사진"/></a>
+            </li>
+            <li>
+              <a href="sldie.html" title="슬라이드02"><img src="./img/ad2.jpg" alt="사진"/></a>
+            </li>
+            <li>
+              <a href="sldie.html" title="슬라이드03"><img src="./img/ad3.jpg" alt="사진"/></a>
+            </li>
+            <li>
+              <a href="sldie.html" title="슬라이드04"><img src="./img/ad4.jpg" alt="사진"/></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+       <section>
+        <article class="info">
+          <img src="./img/poca.png" alt="사진">
+          <ul>
+            <li>우리 몸에 6 ~ 7 0 % 의 수 분 ,<br>
+               <div>내 몸의 주인공은</div> 포카리스웨트</li>
+            <li>포카리스웨트는 체액과 가까운 농도로 조성되어<br> 있는 전해질(나트륨, 칼륨, 칼슘, 마그네슘 등)을<br> 함유하고 있어 체내로 신속하게 수분과 이온을<br> 보충해주고 우리 몸의 밸런스를 유지해줍니다.</li>
+          </ul>
+        </article>
+
+        <article class="sns">
+          <div>포카리스웨트 <i class="fa-brands fa-instagram"></i></div>
+          <ul>
+            <li>
+              <a href="#" title="바로가기">
+                <img src="./img/sns1.jpg" alt="사진">
+                <div class="s_sns">#포카리 #휴식</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="바로가기">
+                <img src="./img/sns2.jpg" alt="사진">
+                <div class="s_sns">#포카리 #휴식</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="바로가기">
+                <img src="./img/sns3.jpg" alt="사진">
+                <div class="s_sns">#포카리 #휴식</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="바로가기">
+                <img src="./img/sns4.jpg" alt="사진">
+                <div class="s_sns">#포카리 #휴식</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="바로가기">
+                <img src="./img/sns5.jpg" alt="사진">
+                <div class="s_sns">#포카리 #휴식</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="바로가기">
+                <img src="./img/sns6.jpg" alt="사진">
+                <div class="s_sns">#포카리 #휴식</div>
+              </a>
+            </li>
+          </ul>
+
+        </article>
+        <article class="ad">
+          <img src="./img/ad1.jpg" alt="협찬">
+          <ul>
+            <li>31TH<br>POCARI GIRL</li>
+            <li>2022 Model<br>츄(우주소녀)</li>
+          </ul>
+        </article>
+
+        <article class="model">
+          <ul>
+            <li>
+              <img src="./img/21.jpg" alt="cf">
+              <p>2022 츄</p>
+            </li>
+            <li>
+              <img src="./img/18.jpg" alt="cf">
+              <p>2021 트와이스</p>
+            </li>
+            <li>
+              <img src="./img/17.jpg" alt="cf">
+              <p>2020 트와이스</p>
+            </li>
+            <li>
+              <img src="./img/20.jpg" alt="cf">
+              <p>2019 이은재</p>
+            </li>
+            <li>
+              <img src="./img/19.png" alt="cf">
+              <p>2018 김소현</p>
+            </li>
+          </ul>
+        </article>
+        
+        <article class="cf">
+          <iframe width="840" height="473" src="https://www.youtube.com/embed/KVqqIbXkljU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <img src="./img/mo.jpg" alt="cf">
+          <img src="img/girl.png" alt="cf" class="cf1">
+        </article>
+
+       </section>
+      </main>
+
+
+
+
+      <!-- 푸터영역 -->
+      <footer>
+
+        <nav class="f_lnb">
+         <ul>
+           <h2>PRODUCT</h2>
+           <li><a href="index.html" title="바로가기">포카리스웨트</a></li>
+           <li><a href="index.html" title="바로가기">이온워터</a></li>
+           <li><a href="index.html" title="바로가기">연혁</a></li>
+           <li><a href="index.html" title="바로가기">BI</a></li>
+           <li><a href="index.html" title="바로가기">패키지</a></li>
+         </ul>
+
+         <ul>
+           <h2>MEDIA</h2>
+           <li><a href="index.html" title="바로가기">모델TVCF</a></li>
+           <li><a href="index.html" title="바로가기">캠페인&프로모션</a></li>
+           <li><a href="index.html" title="바로가기">언론자로</a></li>
+         </ul>
+
+         <ul>
+           <h2>COMMUNITY</h2>
+           <li><a href="index.html" title="바로가기">SOCIAL</a></li>
+           <li><a href="index.html" title="바로가기">갤러리스토리</a></li>
+           <li><a href="index.html" title="바로가기">헬스라이프</a></li>
+           <li><a href="index.html" title="바로가기">이벤트</a></li>
+         </ul>
+
+         <ul>
+           <h2>SNS</h2>
+           <li><a href="index.html" title="바로가기">페이스북</a></li>
+           <li><a href="index.html" title="바로가기">인스타그램</a></li>
+           <li><a href="index.html" title="바로가기">카카오톡</a></li>
+           <li><a href="index.html" title="바로가기">트위터</a></li>
+         </ul>
+
+         <ul>
+           <h2>GLOBAL</h2>
+           <li><a href="index.html" title="바로가기">글로벌 네트워크</a></li>
+         </ul>
+
+
+        </nav>
+
+
+        <address>
+          <p>Copyright &copy;2017 donga-Otsuka co, ltd. All rights reserved
+          </p>
+        </address>
+
+      </footer>
+
+
+      <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide"
+          });
+        });
+      </script>
+    </body>
+    </html>
+    

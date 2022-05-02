@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 기본서식 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+  font-size:12px;
+  color:#333;
+}
+
+a{
+  color:#333;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
+}
+
+/* pc버전에서 보이지 말아야 할것 숨기기 */
+#toggle, .total_btn, i.m_search,
+.gnb > h3, i.fa-times, i.fa-angle-down{
+  display:none;
+}
+main{padding-bottom:50px;}
